@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Routes - Cycling Companion</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1>🚴‍♀️ Cycling Companion</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/routes" class="nav-link active">Community Routes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="routes-header">
+            <div class="container">
+                <h2>Community Cycling Routes</h2>
+                <p>Discover amazing cycling routes shared by the community</p>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="container">
+                <div class="filter-panel">
+                    <h3>Filter Routes</h3>
+                    <div class="filter-grid">
+                        <div class="filter-group">
+                            <label for="difficulty">Difficulty</label>
+                            <select id="difficulty" class="filter-select">
+                                <option value="">All Difficulties</option>
+                                <option value="Easy">Easy</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Hard">Hard</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="distance-range">Distance Range (km)</label>
+                            <div class="distance-inputs">
+                                <input type="number" id="min-distance" placeholder="Min" min="0" class="filter-input">
+                                <span>-</span>
+                                <input type="number" id="max-distance" placeholder="Max" min="0" class="filter-input">
+                            </div>
+                        </div>
+                        <div class="filter-group">
+                            <label for="min-rating">Minimum Rating</label>
+                            <select id="min-rating" class="filter-select">
+                                <option value="">Any Rating</option>
+                                <option value="4.5">4.5+ Stars</option>
+                                <option value="4.0">4.0+ Stars</option>
+                                <option value="3.5">3.5+ Stars</option>
+                                <option value="3.0">3.0+ Stars</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <button id="apply-filters" class="btn btn-primary">Apply Filters</button>
+                            <button id="clear-filters" class="btn btn-secondary">Clear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="routes-listing">
+            <div class="container">
+                <div id="loading" class="loading">Loading routes...</div>
+                <div id="routes-count" class="routes-count"></div>
+                <div id="routes-grid" class="routes-grid"></div>
+                <div id="no-routes" class="no-routes" style="display: none;">
+                    <p>No routes found matching your criteria. Try adjusting your filters.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cycling Companion. A prototype cycling community platform.</p>
+        </div>
+    </footer>
+
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/routes.js"></script>
+</body>
+</html>

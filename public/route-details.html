@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Details - Cycling Companion</title>
+    <link rel="stylesheet" href="/styles/main.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1>🚴‍♀️ Cycling Companion</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/routes" class="nav-link">Community Routes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div id="loading" class="loading">Loading route details...</div>
+        
+        <div id="route-content" style="display: none;">
+            <section class="route-header">
+                <div class="container">
+                    <div class="route-title">
+                        <h2 id="route-name"></h2>
+                        <div class="route-meta">
+                            <span class="rating" id="route-rating"></span>
+                            <span class="difficulty" id="route-difficulty"></span>
+                            <span class="distance" id="route-distance"></span>
+                        </div>
+                    </div>
+                    <p id="route-description" class="route-description"></p>
+                </div>
+            </section>
+
+            <section class="route-details">
+                <div class="container">
+                    <div class="details-grid">
+                        <div class="route-stats">
+                            <h3>Route Statistics</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-label">Distance</div>
+                                    <div class="stat-value" id="stat-distance"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Difficulty</div>
+                                    <div class="stat-value" id="stat-difficulty"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Rating</div>
+                                    <div class="stat-value" id="stat-rating"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Elevation Gain</div>
+                                    <div class="stat-value" id="stat-elevation"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Surface</div>
+                                    <div class="stat-value" id="stat-surface"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-label">Traffic</div>
+                                    <div class="stat-value" id="stat-traffic"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="route-tags">
+                                <h4>Tags</h4>
+                                <div id="route-tags" class="tags-container"></div>
+                            </div>
+                        </div>
+
+                        <div class="route-map">
+                            <h3>Route Map</h3>
+                            <div id="map" class="map-container"></div>
+                        </div>
+                    </div>
+
+                    <div class="elevation-section">
+                        <h3>Elevation Profile</h3>
+                        <div id="elevation-chart" class="elevation-chart"></div>
+                    </div>
+
+                    <div class="route-actions">
+                        <a href="/routes" class="btn btn-secondary">← Back to Routes</a>
+                        <button id="share-route" class="btn btn-primary">Share Route</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="route-not-found" style="display: none;">
+            <section class="error-section">
+                <div class="container">
+                    <h2>Route Not Found</h2>
+                    <p>The route you're looking for could not be found.</p>
+                    <a href="/routes" class="btn btn-primary">Browse All Routes</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cycling Companion. A prototype cycling community platform.</p>
+        </div>
+    </footer>
+
+
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/route-details.js"></script>
+</body>
+</html>
