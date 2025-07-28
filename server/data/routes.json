@@ -1,0 +1,71 @@
+[
+  {
+    "id": "demo-route-1",
+    "name": "Central Park Loop",
+    "description": "Classic scenic loop around Central Park with moderate elevation",
+    "distance": 10.2,
+    "difficulty": "Easy",
+    "terrain": "Urban Park",
+    "isDemo": true,
+    "waypoints": [
+      {"lat": 40.7829, "lng": -73.9654, "name": "Park Entrance South"},
+      {"lat": 40.7851, "lng": -73.9558, "name": "Bethesda Fountain"},
+      {"lat": 40.7794, "lng": -73.9632, "name": "Bow Bridge"},
+      {"lat": 40.7829, "lng": -73.9654, "name": "Park Entrance South"}
+    ],
+    "elevationProfile": [
+      {"distance": 0, "elevation": 15},
+      {"distance": 2.5, "elevation": 25},
+      {"distance": 5.1, "elevation": 35},
+      {"distance": 7.8, "elevation": 20},
+      {"distance": 10.2, "elevation": 15}
+    ]
+  },
+  {
+    "id": "demo-route-2",
+    "name": "Hudson River Greenway",
+    "description": "Flat waterfront route with stunning river views",
+    "distance": 22.5,
+    "difficulty": "Easy",
+    "terrain": "Waterfront",
+    "isDemo": true,
+    "waypoints": [
+      {"lat": 40.7128, "lng": -74.0134, "name": "Battery Park"},
+      {"lat": 40.7589, "lng": -73.9851, "name": "Times Square"},
+      {"lat": 40.8176, "lng": -73.9482, "name": "George Washington Bridge"},
+      {"lat": 40.7128, "lng": -74.0134, "name": "Battery Park"}
+    ],
+    "elevationProfile": [
+      {"distance": 0, "elevation": 5},
+      {"distance": 5.6, "elevation": 8},
+      {"distance": 11.2, "elevation": 12},
+      {"distance": 16.8, "elevation": 8},
+      {"distance": 22.5, "elevation": 5}
+    ]
+  },
+  {
+    "id": "demo-route-3",
+    "name": "Brooklyn Bridge Challenge",
+    "description": "Challenging route with bridge climbs and urban terrain",
+    "distance": 18.7,
+    "difficulty": "Hard",
+    "terrain": "Urban/Bridge",
+    "isDemo": true,
+    "waypoints": [
+      {"lat": 40.7061, "lng": -73.9969, "name": "Brooklyn Bridge Park"},
+      {"lat": 40.7056, "lng": -73.9969, "name": "Brooklyn Bridge"},
+      {"lat": 40.7128, "lng": -74.0060, "name": "Manhattan Bridge"},
+      {"lat": 40.7180, "lng": -73.9897, "name": "Williamsburg Bridge"},
+      {"lat": 40.7061, "lng": -73.9969, "name": "Brooklyn Bridge Park"}
+    ],
+    "elevationProfile": [
+      {"distance": 0, "elevation": 10},
+      {"distance": 3.1, "elevation": 55},
+      {"distance": 6.2, "elevation": 15},
+      {"distance": 9.3, "elevation": 45},
+      {"distance": 12.4, "elevation": 10},
+      {"distance": 15.5, "elevation": 40},
+      {"distance": 18.7, "elevation": 10}
+    ]
+  }
+]

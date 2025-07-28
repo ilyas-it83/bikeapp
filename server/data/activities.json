@@ -1,0 +1,97 @@
+[
+  {
+    "id": "demo-activity-1",
+    "name": "Morning Park Loop",
+    "date": "2024-07-25T08:30:00Z",
+    "distance": 12.5,
+    "duration": 2280,
+    "averageSpeed": 19.7,
+    "maxSpeed": 34.2,
+    "elevationGain": 85,
+    "calories": 420,
+    "isDemo": true,
+    "route": [
+      {"lat": 40.7829, "lng": -73.9654, "elevation": 15, "timestamp": "2024-07-25T08:30:00Z"},
+      {"lat": 40.7850, "lng": -73.9620, "elevation": 18, "timestamp": "2024-07-25T08:35:00Z"},
+      {"lat": 40.7880, "lng": -73.9580, "elevation": 25, "timestamp": "2024-07-25T08:40:00Z"},
+      {"lat": 40.7900, "lng": -73.9550, "elevation": 35, "timestamp": "2024-07-25T08:45:00Z"},
+      {"lat": 40.7829, "lng": -73.9654, "elevation": 15, "timestamp": "2024-07-25T09:08:00Z"}
+    ]
+  },
+  {
+    "id": "demo-activity-2",
+    "name": "Hill Training Ride",
+    "date": "2024-07-24T17:15:00Z",
+    "distance": 25.8,
+    "duration": 4680,
+    "averageSpeed": 19.8,
+    "maxSpeed": 42.1,
+    "elevationGain": 520,
+    "calories": 890,
+    "isDemo": true,
+    "route": [
+      {"lat": 40.7128, "lng": -74.0060, "elevation": 10, "timestamp": "2024-07-24T17:15:00Z"},
+      {"lat": 40.7200, "lng": -74.0000, "elevation": 45, "timestamp": "2024-07-24T17:25:00Z"},
+      {"lat": 40.7280, "lng": -73.9920, "elevation": 120, "timestamp": "2024-07-24T17:40:00Z"},
+      {"lat": 40.7350, "lng": -73.9850, "elevation": 180, "timestamp": "2024-07-24T17:55:00Z"},
+      {"lat": 40.7128, "lng": -74.0060, "elevation": 10, "timestamp": "2024-07-24T18:33:00Z"}
+    ]
+  },
+  {
+    "id": "demo-activity-3",
+    "name": "Weekend Long Ride",
+    "date": "2024-07-21T09:00:00Z",
+    "distance": 45.2,
+    "duration": 8940,
+    "averageSpeed": 18.2,
+    "maxSpeed": 38.5,
+    "elevationGain": 320,
+    "calories": 1520,
+    "isDemo": true,
+    "route": [
+      {"lat": 40.7589, "lng": -73.9851, "elevation": 20, "timestamp": "2024-07-21T09:00:00Z"},
+      {"lat": 40.8000, "lng": -73.9500, "elevation": 35, "timestamp": "2024-07-21T09:30:00Z"},
+      {"lat": 40.8500, "lng": -73.9200, "elevation": 50, "timestamp": "2024-07-21T10:15:00Z"},
+      {"lat": 40.9000, "lng": -73.8800, "elevation": 75, "timestamp": "2024-07-21T11:00:00Z"},
+      {"lat": 40.7589, "lng": -73.9851, "elevation": 20, "timestamp": "2024-07-21T11:29:00Z"}
+    ]
+  },
+  {
+    "id": "demo-activity-4",
+    "name": "Speed Training Session",
+    "date": "2024-07-22T18:45:00Z",
+    "distance": 18.7,
+    "duration": 3240,
+    "averageSpeed": 20.7,
+    "maxSpeed": 48.3,
+    "elevationGain": 155,
+    "calories": 650,
+    "isDemo": true,
+    "route": [
+      {"lat": 40.7505, "lng": -73.9934, "elevation": 12, "timestamp": "2024-07-22T18:45:00Z"},
+      {"lat": 40.7600, "lng": -73.9800, "elevation": 25, "timestamp": "2024-07-22T18:55:00Z"},
+      {"lat": 40.7700, "lng": -73.9650, "elevation": 40, "timestamp": "2024-07-22T19:10:00Z"},
+      {"lat": 40.7800, "lng": -73.9500, "elevation": 55, "timestamp": "2024-07-22T19:25:00Z"},
+      {"lat": 40.7505, "lng": -73.9934, "elevation": 12, "timestamp": "2024-07-22T19:39:00Z"}
+    ]
+  },
+  {
+    "id": "demo-activity-5",
+    "name": "Recovery Ride",
+    "date": "2024-07-23T16:20:00Z",
+    "distance": 8.3,
+    "duration": 1980,
+    "averageSpeed": 15.1,
+    "maxSpeed": 22.4,
+    "elevationGain": 45,
+    "calories": 280,
+    "isDemo": true,
+    "route": [
+      {"lat": 40.7282, "lng": -73.7949, "elevation": 8, "timestamp": "2024-07-23T16:20:00Z"},
+      {"lat": 40.7320, "lng": -73.7920, "elevation": 12, "timestamp": "2024-07-23T16:30:00Z"},
+      {"lat": 40.7350, "lng": -73.7880, "elevation": 18, "timestamp": "2024-07-23T16:40:00Z"},
+      {"lat": 40.7320, "lng": -73.7920, "elevation": 12, "timestamp": "2024-07-23T16:50:00Z"},
+      {"lat": 40.7282, "lng": -73.7949, "elevation": 8, "timestamp": "2024-07-23T16:53:00Z"}
+    ]
+  }
+]
