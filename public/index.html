@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycling Companion - GPS Activity Tracker</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Leaflet CSS - fallback handled in JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" onerror="console.log('Leaflet CSS failed to load - using fallback')" />
+</head>
+<body>
+    <header>
+        <h1>🚴‍♂️ Cycling Companion</h1>
+        <nav>
+            <button id="nav-tracker" class="nav-btn active">GPS Tracker</button>
+            <button id="nav-activities" class="nav-btn">Activities</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- GPS Tracker Section -->
+        <section id="tracker-section" class="active-section">
+            <div class="tracker-container">
+                <div class="metrics-display">
+                    <div class="metric">
+                        <span class="label">Distance</span>
+                        <span id="distance-display" class="value">0.00 km</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">Time</span>
+                        <span id="time-display" class="value">00:00:00</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">Speed</span>
+                        <span id="speed-display" class="value">0.0 km/h</span>
+                    </div>
+                    <div class="metric">
+                        <span class="label">Avg Speed</span>
+                        <span id="avg-speed-display" class="value">0.0 km/h</span>
+                    </div>
+                </div>
+
+                <div class="control-buttons">
+                    <button id="start-btn" class="control-btn start">Start Tracking</button>
+                    <button id="stop-btn" class="control-btn stop" disabled>Stop Tracking</button>
+                </div>
+
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+
+                <div class="activity-form" id="activity-form" style="display: none;">
+                    <h3>Save Your Ride</h3>
+                    <form id="save-activity-form">
+                        <input type="text" id="activity-name" placeholder="Activity Name" required>
+                        <textarea id="activity-notes" placeholder="Notes (optional)" rows="3"></textarea>
+                        <div class="form-buttons">
+                            <button type="submit" class="save-btn">Save Activity</button>
+                            <button type="button" class="cancel-btn" id="cancel-save">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities-section">
+            <div class="activities-container">
+                <h2>Your Activities</h2>
+                <div id="activities-list" class="activities-list">
+                    <!-- Activities will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Status Messages -->
+    <div id="status-message" class="status-message"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" onerror="window.leafletFailed=true"></script>
+    <script src="scripts/gps-tracker.js"></script>
+    <script src="scripts/activities.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
