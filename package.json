@@ -1,0 +1,22 @@
+{
+  "name": "cycling-companion-app",
+  "version": "1.0.0",
+  "description": "A cycling companion web app for tracking activities and earning badges",
+  "main": "server/app.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "keywords": ["cycling", "fitness", "tracking", "badges"],
+  "author": "Ilyas Fakir Mohamed",
+  "license": "MIT"
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycling Companion - Badge Collection</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/badges.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>🚴 Cycling Companion</h1>
+            <ul>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#badges" class="active">Badges</a></li>
+                <li><a href="#stats">Statistics</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="badges-section">
+            <h2>🏆 Badge Collection</h2>
+            <p>Earn badges by reaching cycling milestones and achievements!</p>
+            
+            <div id="badge-stats">
+                <div class="stat-card">
+                    <span class="stat-number" id="earned-count">0</span>
+                    <span class="stat-label">Badges Earned</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="total-count">0</span>
+                    <span class="stat-label">Total Available</span>
+                </div>
+            </div>
+
+            <div class="badge-categories">
+                <h3>🎖️ Earned Badges</h3>
+                <div id="earned-badges" class="badge-grid">
+                    <div class="loading">Loading earned badges...</div>
+                </div>
+
+                <h3>🔒 Available Badges</h3>
+                <div id="available-badges" class="badge-grid">
+                    <div class="loading">Loading available badges...</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities-section" style="display: none;">
+            <h2>📊 Recent Activities</h2>
+            <div id="activities-list">
+                <div class="loading">Loading activities...</div>
+            </div>
+            <button id="check-badges-btn" class="btn btn-primary">
+                Check for New Badges 🎯
+            </button>
+        </section>
+
+        <section id="stats-section" style="display: none;">
+            <h2>📈 Your Statistics</h2>
+            <div id="stats-grid">
+                <div class="loading">Loading statistics...</div>
+            </div>
+        </section>
+    </main>
+
+    <div id="badge-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>🎉 Badge Earned!</h3>
+            <div id="modal-badge-content"></div>
+            <button class="btn btn-primary" onclick="closeBadgeModal()">Awesome!</button>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/badges.js"></script>
+</body>
+</html>
