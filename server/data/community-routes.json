@@ -1,0 +1,165 @@
+[
+  {
+    "id": "route-001",
+    "name": "Central Park Loop",
+    "description": "A scenic loop around Central Park perfect for beginner cyclists. Mostly flat with gentle rolling hills and beautiful views of the park's landmarks.",
+    "distance": 10.2,
+    "difficulty": "Easy",
+    "rating": 4.5,
+    "ratingCount": 127,
+    "creator": "NYC Cycling Club",
+    "tags": ["park", "scenic", "beginner-friendly", "urban"],
+    "waypoints": [
+      {"lat": 40.7829, "lng": -73.9654, "name": "Central Park North"},
+      {"lat": 40.7589, "lng": -73.9441, "name": "Central Park East"},
+      {"lat": 40.7505, "lng": -73.9793, "name": "Central Park South"},
+      {"lat": 40.7729, "lng": -73.9814, "name": "Central Park West"},
+      {"lat": 40.7829, "lng": -73.9654, "name": "Central Park North"}
+    ],
+    "elevationProfile": [
+      {"distance": 0, "elevation": 15},
+      {"distance": 2.5, "elevation": 25},
+      {"distance": 5.1, "elevation": 20},
+      {"distance": 7.6, "elevation": 30},
+      {"distance": 10.2, "elevation": 15}
+    ],
+    "totalElevationGain": 45,
+    "surface": "paved",
+    "traffic": "moderate"
+  },
+  {
+    "id": "route-002", 
+    "name": "Hudson River Greenway",
+    "description": "A flat, dedicated bike path along the Hudson River with stunning water views and Manhattan skyline. Great for all skill levels.",
+    "distance": 22.4,
+    "difficulty": "Easy",
+    "rating": 4.8,
+    "ratingCount": 203,
+    "creator": "Hudson Valley Cyclists",
+    "tags": ["waterfront", "flat", "dedicated-path", "scenic"],
+    "waypoints": [
+      {"lat": 40.7580, "lng": -74.0020, "name": "Battery Park"},
+      {"lat": 40.7614, "lng": -74.0146, "name": "West Side Highway"},
+      {"lat": 40.7830, "lng": -74.0176, "name": "Riverside Park"},
+      {"lat": 40.8176, "lng": -73.9442, "name": "George Washington Bridge"}
+    ],
+    "elevationProfile": [
+      {"distance": 0, "elevation": 5},
+      {"distance": 5.6, "elevation": 8},
+      {"distance": 11.2, "elevation": 12},
+      {"distance": 16.8, "elevation": 15},
+      {"distance": 22.4, "elevation": 20}
+    ],
+    "totalElevationGain": 25,
+    "surface": "paved",
+    "traffic": "none"
+  },
+  {
+    "id": "route-003",
+    "name": "Brooklyn Bridge to Williamsburg",
+    "description": "Urban cycling adventure crossing iconic bridges with moderate climbs. Offers great city views but requires confidence in traffic.",
+    "distance": 15.7,
+    "difficulty": "Intermediate",
+    "rating": 4.2,
+    "ratingCount": 89,
+    "creator": "Brooklyn Bike Collective",
+    "tags": ["bridges", "urban", "moderate-traffic", "historic"],
+    "waypoints": [
+      {"lat": 40.7061, "lng": -73.9969, "name": "Brooklyn Bridge"},
+      {"lat": 40.7014, "lng": -73.9877, "name": "DUMBO"},
+      {"lat": 40.7081, "lng": -73.9571, "name": "Brooklyn Bridge Park"},
+      {"lat": 40.7143, "lng": -73.9537, "name": "Williamsburg Bridge"}
+    ],
+    "elevationProfile": [
+      {"distance": 0, "elevation": 10},
+      {"distance": 2.0, "elevation": 45},
+      {"distance": 5.5, "elevation": 5},
+      {"distance": 12.1, "elevation": 35},
+      {"distance": 15.7, "elevation": 15}
+    ],
+    "totalElevationGain": 85,
+    "surface": "paved",
+    "traffic": "heavy"
+  },
+  {
+    "id": "route-004",
+    "name": "Bear Mountain Challenge",
+    "description": "Challenging mountain route with steep climbs and breathtaking views. Recommended for experienced cyclists seeking a serious workout.",
+    "distance": 35.2,
+    "difficulty": "Hard",
+    "rating": 4.9,
+    "ratingCount": 45,
+    "creator": "Mountain Cycling Enthusiasts",
+    "tags": ["mountain", "challenging", "scenic", "climbing"],
+    "waypoints": [
+      {"lat": 41.3123, "lng": -74.0093, "name": "Bear Mountain Base"},
+      {"lat": 41.3156, "lng": -74.0145, "name": "Hessian Lake"},
+      {"lat": 41.3184, "lng": -74.0201, "name": "Bear Mountain Summit"},
+      {"lat": 41.3098, "lng": -74.0267, "name": "Scenic Overlook"}
+    ],
+    "elevationProfile": [
+      {"distance": 0, "elevation": 50},
+      {"distance": 8.8, "elevation": 200},
+      {"distance": 17.6, "elevation": 390},
+      {"distance": 26.4, "elevation": 410},
+      {"distance": 35.2, "elevation": 80}
+    ],
+    "totalElevationGain": 520,
+    "surface": "paved",
+    "traffic": "light"
+  },
+  {
+    "id": "route-005",
+    "name": "Coastal Highway Ride",
+    "description": "Beautiful coastal route with ocean views and moderate rolling hills. Perfect for intermediate cyclists who enjoy seaside scenery.",
+    "distance": 28.9,
+    "difficulty": "Intermediate", 
+    "rating": 4.6,
+    "ratingCount": 156,
+    "creator": "Coastal Cycling Club",
+    "tags": ["coastal", "ocean-views", "moderate", "scenic"],
+    "waypoints": [
+      {"lat": 40.5795, "lng": -74.1502, "name": "Sandy Hook"},
+      {"lat": 40.4774, "lng": -74.0059, "name": "Sea Bright"},
+      {"lat": 40.3962, "lng": -74.0187, "name": "Long Branch"},
+      {"lat": 40.3318, "lng": -74.0179, "name": "Asbury Park"}
+    ],
+    "elevationProfile": [
+      {"distance": 0, "elevation": 2},
+      {"distance": 7.2, "elevation": 35},
+      {"distance": 14.5, "elevation": 15},
+      {"distance": 21.7, "elevation": 42},
+      {"distance": 28.9, "elevation": 8}
+    ],
+    "totalElevationGain": 95,
+    "surface": "paved",
+    "traffic": "moderate"
+  },
+  {
+    "id": "route-006",
+    "name": "Country Roads Loop",
+    "description": "Peaceful rural loop through farmlands and small towns. Light traffic and gentle hills make this perfect for family rides.",
+    "distance": 18.3,
+    "difficulty": "Easy",
+    "rating": 4.3,
+    "ratingCount": 72,
+    "creator": "Rural Riders Group",
+    "tags": ["rural", "family-friendly", "peaceful", "farmland"],
+    "waypoints": [
+      {"lat": 40.8567, "lng": -74.2014, "name": "Morristown"},
+      {"lat": 40.8789, "lng": -74.2145, "name": "Mendham"},
+      {"lat": 40.8923, "lng": -74.1876, "name": "Chester"},
+      {"lat": 40.8701, "lng": -74.1789, "name": "Peapack"}
+    ],
+    "elevationProfile": [
+      {"distance": 0, "elevation": 125},
+      {"distance": 4.6, "elevation": 165},
+      {"distance": 9.2, "elevation": 145},
+      {"distance": 13.7, "elevation": 175},
+      {"distance": 18.3, "elevation": 125}
+    ],
+    "totalElevationGain": 85,
+    "surface": "paved",
+    "traffic": "light"
+  }
+]
