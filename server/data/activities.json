@@ -1,0 +1,25 @@
+[
+  {
+    "id": "17537002437136v9g2p8qm",
+    "name": "Test Ride",
+    "date": "2025-01-28",
+    "distance": 10.5,
+    "duration": 2400,
+    "averageSpeed": 15.75,
+    "maxSpeed": 28.2,
+    "elevationGain": 120,
+    "route": [
+      {
+        "lat": 40.7128,
+        "lng": -74.006,
+        "elevation": 10
+      },
+      {
+        "lat": 40.713,
+        "lng": -74.0058,
+        "elevation": 15
+      }
+    ],
+    "createdAt": "2025-07-28T10:57:23.713Z"
+  }
+]
