@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚴‍♂️ Cycling Companion</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <header class="app-header">
+        <div class="container">
+            <h1>🚴‍♂️ Cycling Companion</h1>
+            <nav class="main-nav">
+                <button class="nav-btn active" data-section="routes">Routes</button>
+                <button class="nav-btn" data-section="activities">Activities</button>
+                <button class="nav-btn" data-section="analytics">Analytics</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <div class="container">
+            <!-- Routes Section -->
+            <section id="routes-section" class="app-section active">
+                <div class="section-header">
+                    <h2>Route Management</h2>
+                    <button id="create-route-btn" class="btn btn-primary">Create New Route</button>
+                </div>
+
+                <!-- Route Planner -->
+                <div id="route-planner" class="route-planner hidden">
+                    <div class="planner-controls">
+                        <input type="text" id="route-name" placeholder="Route name" class="form-input">
+                        <textarea id="route-description" placeholder="Route description (optional)" class="form-input" rows="2"></textarea>
+                        <div class="route-actions">
+                            <button id="save-route-btn" class="btn btn-success">Save Route</button>
+                            <button id="cancel-route-btn" class="btn btn-secondary">Cancel</button>
+                            <span class="route-stats">Distance: <span id="route-distance">0.0</span> km</span>
+                        </div>
+                    </div>
+                    <div id="route-map" class="map-container"></div>
+                    <div class="map-instructions">
+                        Click on the map to add waypoints for your route
+                    </div>
+                </div>
+
+                <!-- Saved Routes List -->
+                <div id="routes-list" class="routes-list">
+                    <h3>Your Saved Routes</h3>
+                    <div id="routes-container" class="routes-grid">
+                        <!-- Routes will be loaded here -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Activities Section -->
+            <section id="activities-section" class="app-section">
+                <div class="section-header">
+                    <h2>Activities</h2>
+                    <button class="btn btn-primary">Start Tracking</button>
+                </div>
+                <div class="coming-soon">
+                    <p>🚧 Activity tracking coming soon!</p>
+                </div>
+            </section>
+
+            <!-- Analytics Section -->
+            <section id="analytics-section" class="app-section">
+                <div class="section-header">
+                    <h2>Performance Analytics</h2>
+                </div>
+                <div class="coming-soon">
+                    <p>📊 Analytics dashboard coming soon!</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Route Detail Modal -->
+    <div id="route-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-route-name">Route Details</h3>
+                <button id="close-modal" class="btn btn-text">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-route-map" class="map-container small"></div>
+                <div class="route-details">
+                    <p><strong>Description:</strong> <span id="modal-route-description">-</span></p>
+                    <p><strong>Distance:</strong> <span id="modal-route-distance">0</span> km</p>
+                    <p><strong>Difficulty:</strong> <span id="modal-route-difficulty">Easy</span></p>
+                </div>
+                <div class="modal-actions">
+                    <button id="share-route-btn" class="btn btn-primary">🔗 Share Route</button>
+                    <button id="edit-route-btn" class="btn btn-secondary">Edit</button>
+                    <button id="delete-route-btn" class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal -->
+    <div id="share-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Share Route</h3>
+                <button id="close-share-modal" class="btn btn-text">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Share this route with friends by copying the link below:</p>
+                <div class="share-link-container">
+                    <input type="text" id="share-link" class="form-input" readonly>
+                    <button id="copy-link-btn" class="btn btn-primary">Copy</button>
+                </div>
+                <div class="share-note">
+                    <small>🔒 No personal information is included in shared routes</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <span id="toast-message"></span>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
