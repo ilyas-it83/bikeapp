@@ -1,0 +1,50 @@
+[
+  {
+    "id": "9e957093-6920-42b8-a715-7f4bc9729024",
+    "badgeId": "first-ride",
+    "earnedDate": "2025-07-28T10:59:03.305Z",
+    "badge": {
+      "id": "first-ride",
+      "name": "First Ride",
+      "description": "Complete your first cycling activity",
+      "icon": "🚴",
+      "type": "milestone",
+      "criteria": {
+        "type": "activity_count",
+        "threshold": 1
+      }
+    }
+  },
+  {
+    "id": "6ac1c6fe-d5ba-45f2-986a-5e26046c4154",
+    "badgeId": "distance-50km",
+    "earnedDate": "2025-07-28T11:00:40.856Z",
+    "badge": {
+      "id": "distance-50km",
+      "name": "50km Explorer",
+      "description": "Cycle a total distance of 50 kilometers",
+      "icon": "🏃",
+      "type": "distance",
+      "criteria": {
+        "type": "total_distance",
+        "threshold": 50
+      }
+    }
+  },
+  {
+    "id": "453d7395-e559-4b42-901d-31bc3b64dfab",
+    "badgeId": "climbing-500m",
+    "earnedDate": "2025-07-28T11:00:40.856Z",
+    "badge": {
+      "id": "climbing-500m",
+      "name": "Hill Climber",
+      "description": "Gain 500 meters of total elevation",
+      "icon": "⛰️",
+      "type": "elevation",
+      "criteria": {
+        "type": "total_elevation",
+        "threshold": 500
+      }
+    }
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "first-ride",
+    "name": "First Ride",
+    "description": "Complete your first cycling activity",
+    "icon": "🚴",
+    "type": "milestone",
+    "criteria": {
+      "type": "activity_count",
+      "threshold": 1
+    }
+  },
+  {
+    "id": "distance-50km",
+    "name": "50km Explorer",
+    "description": "Cycle a total distance of 50 kilometers",
+    "icon": "🏃",
+    "type": "distance",
+    "criteria": {
+      "type": "total_distance",
+      "threshold": 50
+    }
+  },
+  {
+    "id": "distance-100km",
+    "name": "Century Rider",
+    "description": "Cycle a total distance of 100 kilometers",
+    "icon": "🚵",
+    "type": "distance",
+    "criteria": {
+      "type": "total_distance",
+      "threshold": 100
+    }
+  },
+  {
+    "id": "distance-500km",
+    "name": "Distance Master",
+    "description": "Cycle a total distance of 500 kilometers",
+    "icon": "🏆",
+    "type": "distance",
+    "criteria": {
+      "type": "total_distance",
+      "threshold": 500
+    }
+  },
+  {
+    "id": "climbing-500m",
+    "name": "Hill Climber",
+    "description": "Gain 500 meters of total elevation",
+    "icon": "⛰️",
+    "type": "elevation",
+    "criteria": {
+      "type": "total_elevation",
+      "threshold": 500
+    }
+  },
+  {
+    "id": "climbing-1000m",
+    "name": "Mountain Conqueror",
+    "description": "Gain 1000 meters of total elevation",
+    "icon": "🏔️",
+    "type": "elevation",
+    "criteria": {
+      "type": "total_elevation",
+      "threshold": 1000
+    }
+  }
+]
