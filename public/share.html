@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚴‍♂️ Shared Route - Cycling Companion</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <header class="app-header">
+        <div class="container">
+            <h1>🚴‍♂️ Shared Cycling Route</h1>
+            <a href="/" class="btn btn-primary">View All Routes</a>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <div class="container">
+            <div id="loading" class="loading">
+                <p>Loading route...</p>
+            </div>
+
+            <div id="route-content" class="route-content hidden">
+                <div class="route-header">
+                    <h2 id="route-name">Route Name</h2>
+                    <div class="route-meta">
+                        <span class="route-stat">📏 <span id="route-distance">0</span> km</span>
+                        <span class="route-stat">⚡ <span id="route-difficulty">Easy</span></span>
+                        <span class="route-stat">📅 <span id="route-date">Date</span></span>
+                    </div>
+                </div>
+
+                <div id="route-description" class="route-description">
+                    <!-- Description will be loaded here -->
+                </div>
+
+                <div id="shared-route-map" class="map-container large"></div>
+
+                <div class="route-actions">
+                    <button id="copy-route-btn" class="btn btn-secondary">📋 Copy Route Data</button>
+                    <button id="view-app-btn" class="btn btn-primary">🚴‍♂️ Open Full App</button>
+                </div>
+            </div>
+
+            <div id="error-content" class="error-content hidden">
+                <div class="error-message">
+                    <h2>😞 Route Not Found</h2>
+                    <p>Sorry, the shared route you're looking for doesn't exist or may have been removed.</p>
+                    <a href="/" class="btn btn-primary">Browse Other Routes</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast hidden">
+        <span id="toast-message"></span>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../js/shared-route.js"></script>
+</body>
+</html>

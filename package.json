@@ -1,0 +1,19 @@
+{
+  "name": "cycling-companion-app",
+  "version": "1.0.0",
+  "description": "A simple cycling companion web application for tracking activities and planning routes",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": ["cycling", "routes", "fitness", "tracking"],
+  "author": "Ilyas Fakir Mohamed",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.0"
+  }
+}
