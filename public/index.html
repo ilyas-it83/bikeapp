@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cycling Companion App</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <h1>🚴‍♂️ Cycling Companion</h1>
+        <p>Your digital cycling companion for tracking activities and planning routes</p>
+    </header>
+
+    <main class="main">
+        <section class="demo-section">
+            <h2>Demo Features</h2>
+            <p>Try out the app with sample data to see how it works:</p>
+            <div class="demo-buttons">
+                <button id="loadDemoData" class="btn btn-demo">Load Demo Data</button>
+                <button id="clearData" class="btn btn-secondary">Clear All Data</button>
+            </div>
+            <div id="demoStatus" class="status-message"></div>
+        </section>
+
+        <section class="activities-section">
+            <h2>Your Activities</h2>
+            <div id="activitiesContainer" class="activities-container">
+                <p class="empty-state">No activities yet. Load demo data to see sample activities!</p>
+            </div>
+        </section>
+
+        <section class="routes-section">
+            <h2>Available Routes</h2>
+            <div id="routesContainer" class="routes-container">
+                <p class="empty-state">No routes yet. Load demo data to see sample routes!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Cycling Companion App - Prototype Version</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
